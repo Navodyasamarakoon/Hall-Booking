@@ -1,0 +1,28 @@
+bbody {
+    font-family: Arial;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#hallList {
+    margin-top: 20px;
+}

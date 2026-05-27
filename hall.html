@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Hall Management</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Hall Management</h1>
+
+
+    <!-- CREATE HALL -->
+
+    <div class="card">
+
+        <h2>Create Hall</h2>
+
+        <input type="text"
+               id="hallName"
+               placeholder="Hall Name">
+
+        <input type="text"
+               id="description"
+               placeholder="Description">
+
+        <input type="text"
+               id="location"
+               placeholder="Location">
+
+        <input type="number"
+               id="capacity"
+               placeholder="Capacity">
+
+        <button onclick="saveHall()">
+
+            Save Hall
+
+        </button>
+
+    </div>
+
+
+
+    <!-- ALL HALLS -->
+
+    <div class="card">
+
+        <h2>All Halls</h2>
+
+        <button onclick="getHalls()">
+
+            Load Halls
+
+        </button>
+
+        <div id="hallList"></div>
+
+    </div>
+
+
+
+    <!-- UPDATE HALL -->
+
+    <div class="card">
+
+        <h2>Update Hall</h2>
+
+        <input type="text"
+               id="updateHallId"
+               placeholder="Hall UUID">
+
+        <input type="text"
+               id="updateHallName"
+               placeholder="Hall Name">
+
+        <input type="text"
+               id="updateDescription"
+               placeholder="Description">
+
+        <input type="text"
+               id="updateLocation"
+               placeholder="Location">
+
+        <input type="number"
+               id="updateCapacity"
+               placeholder="Capacity">
+
+        <button onclick="updateHall()">
+
+            Update Hall
+
+        </button>
+
+    </div>
+
+
+
+    <!-- NAVIGATION -->
+
+    <div class="card">
+
+        <button onclick="window.location.href='dashboard.html'">
+
+            Dashboard
+
+        </button>
+
+        <button onclick="window.location.href='booking.html'">
+
+            Booking Page
+
+        </button>
+
+        <button onclick="logout()">
+
+            Logout
+
+        </button>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+
+    <script>
+
+        getHalls();
+
+    </script>
+
+</body>
+
+</html><!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Hall Management</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Hall Management</h1>
+
+
+    <!-- CREATE HALL -->
+
+    <div class="card">
+
+        <h2>Create Hall</h2>
+
+        <input type="text"
+               id="hallName"
+               placeholder="Hall Name">
+
+        <input type="text"
+               id="description"
+               placeholder="Description">
+
+        <input type="text"
+               id="location"
+               placeholder="Location">
+
+        <input type="number"
+               id="capacity"
+               placeholder="Capacity">
+
+        <button onclick="saveHall()">
+
+            Save Hall
+
+        </button>
+
+    </div>
+
+
+
+    <!-- ALL HALLS -->
+
+    <div class="card">
+
+        <h2>All Halls</h2>
+
+        <button onclick="getHalls()">
+
+            Load Halls
+
+        </button>
+
+        <div id="hallList"></div>
+
+    </div>
+
+
+
+    <!-- UPDATE HALL -->
+
+    <div class="card">
+
+        <h2>Update Hall</h2>
+
+        <input type="text"
+               id="updateHallId"
+               placeholder="Hall UUID">
+
+        <input type="text"
+               id="updateHallName"
+               placeholder="Hall Name">
+
+        <input type="text"
+               id="updateDescription"
+               placeholder="Description">
+
+        <input type="text"
+               id="updateLocation"
+               placeholder="Location">
+
+        <input type="number"
+               id="updateCapacity"
+               placeholder="Capacity">
+
+        <button onclick="updateHall()">
+
+            Update Hall
+
+        </button>
+
+    </div>
+
+
+
+    <!-- NAVIGATION -->
+
+    <div class="card">
+
+        <button onclick="window.location.href='dashboard.html'">
+
+            Dashboard
+
+        </button>
+
+        <button onclick="window.location.href='booking.html'">
+
+            Booking Page
+
+        </button>
+
+        <button onclick="logout()">
+
+            Logout
+
+        </button>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+
+    <script>
+
+        getHalls();
+
+    </script>
+
+</body>
+
+</html>

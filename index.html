@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hall Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOGIN SECTION -->
+
+    <div class="card" id="loginSection">
+
+        <h1>Login</h1>
+
+        <input type="text" id="username" placeholder="Username">
+
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+    </div>
+
+
+    <!-- MAIN APP -->
+
+    <div id="mainApp" style="display:none;">
+
+        <!-- CREATE HALL -->
+
+        <div class="card">
+
+            <h2>Create Hall</h2>
+
+            <input type="text" id="hallName" placeholder="Hall Name">
+
+            <input type="text" id="description" placeholder="Description">
+
+            <input type="text" id="location" placeholder="Location">
+
+            <input type="number" id="capacity" placeholder="Capacity">
+
+            <button onclick="saveHall()">Save Hall</button>
+
+        </div>
+
+
+        <!-- GET HALLS -->
+
+        <div class="card">
+
+            <h2>All Halls</h2>
+
+            <button onclick="getHalls()">Load Halls</button>
+
+            <div id="hallList"></div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
